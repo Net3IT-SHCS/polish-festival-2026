@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polish Festival 2026 — Sacred Heart Cathedral</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            crimson: '#BE123C',
+            'crimson-dark': '#9F1239',
+            'crimson-light': '#FFF1F2',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body        { font-family: 'Inter', system-ui, sans-serif; }
+    .font-display { font-family: 'Playfair Display', Georgia, serif; }
+
+    /* Smooth anchor scroll */
+    html { scroll-behavior: smooth; }
+
+    /* Subtle folk-art diamond divider */
+    .folk-border {
+      background:
+        repeating-linear-gradient(45deg,  #BE123C 0, #BE123C 3px, transparent 3px, transparent 12px),
+        repeating-linear-gradient(-45deg, #BE123C 0, #BE123C 3px, transparent 3px, transparent 12px);
+      height: 6px;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- ─── HERO ──────────────────────────────────────────────────────── -->
+  <header class="bg-crimson text-white">
+
+    <!-- Top folk-art border -->
+    <div class="folk-border opacity-30"></div>
+
+    <div class="max-w-5xl mx-auto px-6 py-20 text-center">
+
+      <!-- Eyebrow -->
+      <p class="uppercase tracking-[0.3em] text-rose-200 text-xs font-semibold mb-8">
+        Sacred Heart Cathedral &nbsp;·&nbsp; Knoxville, Tennessee
+      </p>
+
+      <!-- Main title -->
+      <h1 class="font-display font-black leading-none mb-3">
+        <span class="block text-6xl md:text-8xl">Polish</span>
+        <span class="block text-6xl md:text-8xl">Festival</span>
+      </h1>
+
+      <p class="font-display text-3xl md:text-4xl text-rose-200 mt-2 mb-6">2026</p>
+
+      <!-- Divider rule -->
+      <div class="w-16 h-px bg-rose-300 mx-auto mb-6"></div>
+
+      <!-- Date / time -->
+      <p class="text-rose-100 text-lg mb-10">
+        Saturday, August 1, 2026 &nbsp;·&nbsp; [START TIME] – [END TIME]
+      </p>
+
+      <!-- CTA -->
+      <a href="#tickets"
+         class="inline-block bg-white text-crimson font-semibold px-10 py-4 rounded-full
+                text-base shadow-lg hover:bg-rose-50 transition-colors duration-200">
+        Purchase Tickets
+      </a>
+
+    </div>
+
+    <!-- Bottom folk-art border -->
+    <div class="folk-border opacity-30"></div>
+
+    <!-- Polish flag red accent strip -->
+    <div class="h-3 bg-crimson-dark"></div>
+
+  </header>
+
+
+  <!-- ─── EVENT DETAIL CARDS ───────────────────────────────────────── -->
+  <section class="py-16 bg-rose-50">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+        <!-- When -->
+        <div class="bg-white rounded-2xl shadow-sm p-7 text-center border border-rose-100">
+          <span class="text-3xl block mb-3">📅</span>
+          <h3 class="font-semibold text-gray-900 mb-2">When</h3>
+          <p class="text-gray-600 text-sm">Saturday, August 1, 2026</p>
+          <p class="text-gray-600 text-sm">[START TIME] – [END TIME]</p>
+        </div>
+
+        <!-- Where -->
+        <div class="bg-white rounded-2xl shadow-sm p-7 text-center border border-rose-100">
+          <span class="text-3xl block mb-3">📍</span>
+          <h3 class="font-semibold text-gray-900 mb-2">Where</h3>
+          <p class="text-gray-600 text-sm">Sacred Heart Cathedral</p>
+          <p class="text-gray-600 text-sm">[STREET ADDRESS]</p>
+          <p class="text-gray-600 text-sm">Knoxville, TN [ZIP]</p>
+        </div>
+
+        <!-- Tickets -->
+        <div class="bg-white rounded-2xl shadow-sm p-7 text-center border border-rose-100">
+          <span class="text-3xl block mb-3">🎟️</span>
+          <h3 class="font-semibold text-gray-900 mb-2">Tickets</h3>
+          <p class="text-gray-600 text-sm">Adults: $[PRICE]</p>
+          <p class="text-gray-600 text-sm">Children (under [AGE]): $[PRICE]</p>
+          <p class="text-gray-600 text-sm">Capacity: [CAP] guests</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─── ABOUT ─────────────────────────────────────────────────────── -->
+  <section class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+
+      <p class="text-crimson uppercase tracking-widest text-xs font-semibold mb-4">
+        About the Event
+      </p>
+
+      <h2 class="font-display text-4xl font-bold text-gray-900 mb-6 leading-snug">
+        A Celebration of Polish<br class="hidden md:block" />
+        Culture &amp; Community
+      </h2>
+
+      <div class="w-12 h-px bg-rose-200 mx-auto mb-8"></div>
+
+      <p class="text-gray-600 text-lg leading-relaxed">
+        <!--
+          REPLACE THIS PARAGRAPH with 2–3 sentences describing the festival:
+          food, music, entertainment, cultural activities, family-friendly details, etc.
+        -->
+        [EVENT DESCRIPTION — describe the food, music, entertainment, cultural 
+        activities, and what guests can expect. 2–3 sentences works well here.]
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ─── TICKETS / BLACKBAUD EMBED ────────────────────────────────── -->
+  <section id="tickets" class="py-20 bg-rose-50">
+    <div class="max-w-3xl mx-auto px-6">
+
+      <div class="text-center mb-10">
+        <p class="text-crimson uppercase tracking-widest text-xs font-semibold mb-4">
+          Reserve Your Spot
+        </p>
+        <h2 class="font-display text-4xl font-bold text-gray-900">
+          Get Your Tickets
+        </h2>
+      </div>
+
+      <!--
+        ═══════════════════════════════════════════════════
+        REPLACE THE DIV BELOW WITH YOUR BLACKBAUD EMBED CODE
+        when the diocese provides it. Delete the placeholder
+        div and paste the Blackbaud snippet in its place.
+        ═══════════════════════════════════════════════════
+      -->
+      <div class="bg-white rounded-2xl shadow-sm p-10 border border-rose-100 text-center">
+        <p class="text-gray-400 italic text-sm">
+          Ticket purchase form will appear here.<br />
+          (Blackbaud embed code pending from diocese.)
+        </p>
+      </div>
+      <!-- END BLACKBAUD PLACEHOLDER -->
+
+    </div>
+  </section>
+
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────────── -->
+  <footer class="bg-crimson-dark text-white">
+
+    <div class="folk-border opacity-20"></div>
+
+    <div class="max-w-4xl mx-auto px-6 py-12 text-center">
+
+      <p class="font-display text-xl font-bold mb-1">Sacred Heart Cathedral</p>
+      <p class="text-rose-200 text-sm mb-1">[ADDRESS] &nbsp;·&nbsp; Knoxville, TN</p>
+      <p class="text-rose-200 text-sm">[PHONE] &nbsp;·&nbsp; [EMAIL]</p>
+
+      <div class="w-16 h-px bg-rose-700 mx-auto my-6"></div>
+
+      <p class="text-rose-400 text-xs">
+        © 2026 Sacred Heart Cathedral. All rights reserved.
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
